@@ -20,7 +20,7 @@
 &lt;p&gt;也就是帶出 Options -&amp;gt; python.properties 設定檔案, 然後進行修改:&lt;/p&gt;
 &lt;pre class="brush:python"&gt;
 if PLAT_WIN
-    command.go.*.py=Y:\cad\201906_fall\data\py373\pythonw -u "$(FileNameExt)"
+    command.go.*.py=E:\mde\dartpad_based\data\py373\pythonw -u "$(FileNameExt)"
     command.go.subsystem.*.py=1
     command.go.*.pyw=pythonw -u "$(FileNameExt)"
     command.go.subsystem.*.pyw=1
@@ -29,7 +29,7 @@ if PLAT_WIN
 &lt;/pre&gt;
 
 &lt;h2&gt;python 執行路徑的修改&lt;/h2&gt;
-&lt;p&gt;除了採用明碼進行設定的 python.properties 必須配合修改外, 以二位元碼設定的 py373/Scripts/pelican.exe 也必須利用 hxd 進行 python 執行路徑字串置換修改.&lt;/p&gt;
+&lt;p&gt;除了採用明碼進行設定的 python.properties 必須配合修改外, 以二位元碼設定的 py373/Scripts/pelican.exe 也必須利用 &lt;a href="https://mh-nexus.de/en/hxd/"&gt;hxd&lt;/a&gt; 進行 python 執行路徑字串置換修改.&lt;/p&gt;
 &lt;h2&gt;安裝 python 新增模組&lt;/h2&gt;
 &lt;p&gt;當使用者在執行 python 解譯時, 若碰到缺少特定模組時, 可以利用&lt;/p&gt;
 &lt;p&gt;python -m pip install flask_cors&lt;/p&gt;
@@ -86,6 +86,6 @@ if PLAT_WIN
 &lt;/script&gt;
 
 &lt;!-- for LaTeX equations --&gt;
-&lt;script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="https://40823222.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"&gt;&lt;/script&gt;
 
 &lt;/pre&gt;</content><category term="2019FallCP"></category></entry></feed>
