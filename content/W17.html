@@ -159,7 +159,6 @@ img.add_border {
 <p><a href="https://dartpad.github.io/?id=95b1782da4f72fb9e71430d1acb7e791">https://dartpad.github.io/?id=95b1782da4f72fb9e71430d1acb7e791</a></p>
 <p>重量轉換(HTML)</p>
 <p><a href="https://dartpad.github.io/?id=21b22a94ff87662ed77f18ff496bedf0">https://dartpad.github.io/?id=21b22a94ff87662ed77f18ff496bedf0</a></p>
-<p><!-- 透過 getDart(dirname) 取位於 downloads/dart_ex/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
 <script>
 function getDart(dirname){
     source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823222&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
@@ -186,14 +185,84 @@ document.getElementById("iframe").width = 800 ;
 document.getElementById("iframe").height = 600 ;
 }
 </script>
-<!-- 取 Dart 程式的按鈕 --></p>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823222&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823222&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823222&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 -->
 <h4>純 Dart 程式</h4>
-<p><button onclick="getDart('weight')">Weight conversion</button></p>
+<p><button onclick="getDart('weight')">重量</button></p>
 <h4>Html 程式</h4>
-<p><button onclick="getHtmlDart('weight1')">Weight conversion</button><button onclick="getHtmlDart('flag')">National flag</button></p>
-<p><!-- 內建放入的 Dart 原始碼 --></p>
+<p><button onclick="getHtmlDart('weight_change')">重量轉換</button> <button onclick="getHtmlDart('flag')">國旗</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
-<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823222&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/rungekutta&amp;theme=dark" width="800"></iframe></p><br />w12 << <a href='w12.html'>Previous</a> </div>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823222&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/weight&amp;theme=dark" width="800"></iframe></p>
+<p>請輸入所要轉換的重量以數字加上 KG 或 LB:<br/><input id="weight" max="30" min="0" type="text" value="10KG"/> <input id="submit" type="button" value="換算"/><br/> <br/>轉換結果:<br/><br/><label id="output"></label></p>
+<p>
+<script src="https://40823222.github.io/cp2019/downloads/dart_ex/weight_change/weight_change.js"></script>
+<script src="https://40823222.github.io/cp2019/downloads/dart_ex/weight_change/weight_change.js"></script>
+</p>
+<p><canvas height="200" id="canvas" width="300"></canvas></p>
+<p><button id="button">Clear Canvas</button> <button id="cuba">Draw Cuba</button> <button id="china">Draw CHINA</button> <button id="San">Draw SAN</button> <button id="usa">Draw USA</button> <button id="uk">Draw UK</button> <button id="canada">Draw Canada</button></p>
+<p>
+<script src="https://40823222.github.io/cp2019/downloads/dart_ex/flag/flag.js"></script>
+<!-- footer --></p>
+<div class="container">
+<div class="row pt-3 mx-auto">
+<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> Copyright ©
+<script>
+document.write(new Date().getFullYear());
+</script>
+All rights reserved | This template is made with <i aria-hidden="true" class="icon-heart"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+</div>
+</div>
+<p><!-- for footer --> <!-- for site wrap --> <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+<script src="/get_page/cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery-ui.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/popper.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/bootstrap.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/aos.js"></script>
+<!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            --></p><br />w12 << <a href='w12.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
