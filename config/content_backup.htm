@@ -132,8 +132,34 @@ document.getElementById("iframe").height = 600 ;
 <p><a href="https://dartpad.github.io/?id=95b1782da4f72fb9e71430d1acb7e791">https://dartpad.github.io/?id=95b1782da4f72fb9e71430d1acb7e791</a></p>
 <p>重量轉換(HTML)</p>
 <p><a href="https://dartpad.github.io/?id=21b22a94ff87662ed77f18ff496bedf0">https://dartpad.github.io/?id=21b22a94ff87662ed77f18ff496bedf0</a></p>
-<p></p>
-<!-- 取 Dart 程式的按鈕 -->
+<p><!-- 透過 getDart(dirname) 取位於 downloads/dart_ex/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823131&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823131&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823131&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 --></p>
 <h4>純 Dart 程式</h4>
 <p><button onclick="getDart('weight')">Weight conversion</button></p>
 <h4>Html 程式</h4>
