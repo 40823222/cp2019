@@ -33,7 +33,9 @@
 <v t="leo.20180902120523.14"><vh>各國國旗</vh>
 <v t="leo.20200108204243.1"><vh>程式碼</vh></v>
 </v>
-<v t="leo.20200108204306.1"><vh>心得</vh></v>
+<v t="leo.20200108204306.1"><vh>心得</vh>
+<v t="leo.20200108232338.1"><vh>心得</vh></v>
+</v>
 </v>
 </v>
 </v>
@@ -49,7 +51,7 @@
 ### KMOLab
 
 &lt;small&gt;
-Created by [40823222](http://lab.kmol.info/)
+Created by [40823222]
 &lt;/small&gt;
 
 [40823222 網誌](./../blog/index.html)
@@ -287,6 +289,12 @@ vertical: body pane on the botton</t>
 &lt;iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=40823222&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/flag&amp;theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
     &lt;/script&gt;
 &lt;/section&gt;</t>
-<t tx="leo.20200108204306.1"></t>
+<t tx="leo.20200108204306.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200108232338.1">上了計算機課程，從一開始的時候，甚麼都不懂，創立網站、dartpad程式等等對我們初學者來說相當的不容易，不過經過長久的歷練，逐漸地發現這門課的用意，就是要我們創發出自己的東西，讓自己的東西可以展現給別人看，也學會到如何自製影片，學習到很多之前沒學過的內容。</t>
 </tnodes>
 </leo_file>
