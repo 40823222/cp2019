@@ -309,6 +309,6 @@ vertical: body pane on the botton</t>
 &lt;/section&gt;</t>
 <t tx="leo.20200109135950.1">#自評
 
-60分</t>
+65分</t>
 </tnodes>
 </leo_file>
