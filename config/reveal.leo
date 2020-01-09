@@ -300,7 +300,7 @@ vertical: body pane on the botton</t>
 &lt;/section&gt;</t>
 <t tx="leo.20200108232338.1">心得
 
-上了計算機課程，從一開始的時候，甚麼都不懂，創立網站、dartpad程式等等對我們初學者來說相當的不容易，不過經過長久的歷練，學習到很多之前沒學過的內容，</t>
+上了計算機課程，從一開始的時候，甚麼都不懂，創立網站、dartpad程式等等對我們初學者來說相當的不容易，當時推送到倉儲時一直無法推送成功，尋求老師的協助才得以解決，也學習到很多之前沒學過的內容，讓我開啟新視野。</t>
 <t tx="leo.20200109135649.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
