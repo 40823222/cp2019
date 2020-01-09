@@ -52,7 +52,7 @@
 ### KMOLab
 
 &lt;small&gt;
-Created by [https://github.com/40823222/cp2019]
+Created by [40823222]
 &lt;/small&gt;
 
 [40823222 網誌](./../blog/index.html)
